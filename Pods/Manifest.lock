@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.7.3)
+  - ReSwift (4.0.1)
+  - RxSwift (4.2.0)
+  - Toolbelt (0.0.1)
+  - ToolbeltUI (0.0.1)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - ReSwift
+  - RxSwift
+  - Toolbelt (from `https://github.com/andrewwells/toolbelt.git`)
+  - ToolbeltUI (from `https://github.com/andrewwells/toolbelt.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReSwift
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+  Toolbelt:
+    :git: https://github.com/andrewwells/toolbelt.git
+  ToolbeltUI:
+    :git: https://github.com/andrewwells/toolbelt.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: a5cd9e233f24df3583f4b02f7e4722c076ab9032
+    :git: https://github.com/Alamofire/Alamofire.git
+  Toolbelt:
+    :commit: e63932cf4d5c9dd4fe65b1c9a5bf7cc55bb7ec07
+    :git: https://github.com/andrewwells/toolbelt.git
+  ToolbeltUI:
+    :commit: e63932cf4d5c9dd4fe65b1c9a5bf7cc55bb7ec07
+    :git: https://github.com/andrewwells/toolbelt.git
+
+SPEC CHECKSUMS:
+  Alamofire: 5f691e36644ab9a04e6df58bfa74b2d627a6919b
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  Toolbelt: 68db704bc91116849272eda565706b87224263f1
+  ToolbeltUI: afc76668b584a33eeb38968859be45e43949092b
+
+PODFILE CHECKSUM: 563cb531fe1d6dfc099092cef0f446d415c729c1
+
+COCOAPODS: 1.5.3
