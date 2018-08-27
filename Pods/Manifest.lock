@@ -1,34 +1,56 @@
 PODS:
-  - Alamofire (4.7.3)
+  - IQKeyboardManagerSwift (6.1.1)
+  - PullToRefreshKit (0.8.6)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - ReRxSwift (1.2.2):
+    - ReSwift (~> 4.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - ReSwift (4.0.1)
+  - ReSwiftRouter (0.6.0):
+    - ReSwift (~> 4.0.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
+  - SnapKit (4.0.0)
   - Toolbelt (0.0.1)
   - ToolbeltUI (0.0.1)
 
 DEPENDENCIES:
-  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - IQKeyboardManagerSwift
+  - PullToRefreshKit
+  - R.swift
+  - ReRxSwift (~> 1.0)
   - ReSwift
-  - RxSwift
+  - ReSwiftRouter
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit
   - Toolbelt (from `https://github.com/andrewwells/toolbelt.git`)
   - ToolbeltUI (from `https://github.com/andrewwells/toolbelt.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - IQKeyboardManagerSwift
+    - PullToRefreshKit
+    - R.swift
+    - R.swift.Library
+    - ReRxSwift
     - ReSwift
+    - ReSwiftRouter
+    - RxCocoa
     - RxSwift
+    - SnapKit
 
 EXTERNAL SOURCES:
-  Alamofire:
-    :git: https://github.com/Alamofire/Alamofire.git
   Toolbelt:
     :git: https://github.com/andrewwells/toolbelt.git
   ToolbeltUI:
     :git: https://github.com/andrewwells/toolbelt.git
 
 CHECKOUT OPTIONS:
-  Alamofire:
-    :commit: a5cd9e233f24df3583f4b02f7e4722c076ab9032
-    :git: https://github.com/Alamofire/Alamofire.git
   Toolbelt:
     :commit: e63932cf4d5c9dd4fe65b1c9a5bf7cc55bb7ec07
     :git: https://github.com/andrewwells/toolbelt.git
@@ -37,12 +59,19 @@ CHECKOUT OPTIONS:
     :git: https://github.com/andrewwells/toolbelt.git
 
 SPEC CHECKSUMS:
-  Alamofire: 5f691e36644ab9a04e6df58bfa74b2d627a6919b
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  PullToRefreshKit: 172df52ab9c6cb2c1d4b1872b49f448d6291523f
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  ReRxSwift: f442fb438094237a2918f9345709a31b2a64a9cd
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  ReSwiftRouter: 81f41b37a5dd1c88e1d3d10a660ff2dcc939ba7c
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Toolbelt: 68db704bc91116849272eda565706b87224263f1
   ToolbeltUI: afc76668b584a33eeb38968859be45e43949092b
 
-PODFILE CHECKSUM: 563cb531fe1d6dfc099092cef0f446d415c729c1
+PODFILE CHECKSUM: 8bc5e012ff8af3244288748497708838a113eb3b
 
 COCOAPODS: 1.5.3

@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0C4A880EFB7829A2DC06415D /* Pods_redeuxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E93FDF315E60326D6691A /* Pods_redeuxTests.framework */; };
+		491287F5213386AD00FAB2DA /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491287F4213386AD00FAB2DA /* Redux.swift */; };
+		491287FA2133876200FAB2DA /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491287F92133876200FAB2DA /* AppState.swift */; };
+		491287FC213387B100FAB2DA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491287FB213387B100FAB2DA /* AppReducer.swift */; };
+		49128801213388EE00FAB2DA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49128800213388EE00FAB2DA /* Router.swift */; };
+		4912880621338AA800FAB2DA /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912880521338AA800FAB2DA /* RootRoutable.swift */; };
 		49573DE5213349B4008CB521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49573DE4213349B4008CB521 /* AppDelegate.swift */; };
-		49573DE7213349B4008CB521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49573DE6213349B4008CB521 /* ViewController.swift */; };
-		49573DEA213349B4008CB521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49573DE8213349B4008CB521 /* Main.storyboard */; };
 		49573DEC213349B6008CB521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49573DEB213349B6008CB521 /* Assets.xcassets */; };
 		49573DEF213349B6008CB521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49573DED213349B6008CB521 /* LaunchScreen.storyboard */; };
 		49573DFA213349B6008CB521 /* redeuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49573DF9213349B6008CB521 /* redeuxTests.swift */; };
@@ -31,10 +34,13 @@
 		123E93FDF315E60326D6691A /* Pods_redeuxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_redeuxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F91B14AECC63123E89CD299 /* Pods-redeuxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redeuxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-redeuxTests/Pods-redeuxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47DFD92EB36018F3102983E0 /* Pods-redeuxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redeuxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-redeuxTests/Pods-redeuxTests.release.xcconfig"; sourceTree = "<group>"; };
+		491287F4213386AD00FAB2DA /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		491287F92133876200FAB2DA /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		491287FB213387B100FAB2DA /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		49128800213388EE00FAB2DA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4912880521338AA800FAB2DA /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
 		49573DE1213349B4008CB521 /* redeux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redeux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49573DE4213349B4008CB521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49573DE6213349B4008CB521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		49573DE9213349B4008CB521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49573DEB213349B6008CB521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49573DEE213349B6008CB521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49573DF0213349B6008CB521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +92,77 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		491287F32133869000FAB2DA /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				491287F8213386CB00FAB2DA /* Actions */,
+				491287F7213386C400FAB2DA /* Reducers */,
+				491287F6213386B300FAB2DA /* States */,
+				491287F4213386AD00FAB2DA /* Redux.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		491287F6213386B300FAB2DA /* States */ = {
+			isa = PBXGroup;
+			children = (
+				491287F92133876200FAB2DA /* AppState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		491287F7213386C400FAB2DA /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				491287FB213387B100FAB2DA /* AppReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		491287F8213386CB00FAB2DA /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		491287FD213387FE00FAB2DA /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		491287FE2133881E00FAB2DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		491287FF2133884000FAB2DA /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				49128800213388EE00FAB2DA /* Router.swift */,
+				4912880521338AA800FAB2DA /* RootRoutable.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		491288022133899A00FAB2DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		49128803213389B700FAB2DA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		49573DD8213349B4008CB521 = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +186,13 @@
 		49573DE3213349B4008CB521 /* redeux */ = {
 			isa = PBXGroup;
 			children = (
+				49128803213389B700FAB2DA /* Util */,
+				491288022133899A00FAB2DA /* Data */,
+				491287FF2133884000FAB2DA /* Routes */,
+				491287FE2133881E00FAB2DA /* Services */,
+				491287FD213387FE00FAB2DA /* Templates */,
+				491287F32133869000FAB2DA /* Redux */,
 				49573DE4213349B4008CB521 /* AppDelegate.swift */,
-				49573DE6213349B4008CB521 /* ViewController.swift */,
-				49573DE8213349B4008CB521 /* Main.storyboard */,
 				49573DEB213349B6008CB521 /* Assets.xcassets */,
 				49573DED213349B6008CB521 /* LaunchScreen.storyboard */,
 				49573DF0213349B6008CB521 /* Info.plist */,
@@ -136,6 +217,7 @@
 			buildConfigurationList = 49573DFE213349B6008CB521 /* Build configuration list for PBXNativeTarget "redeux" */;
 			buildPhases = (
 				0199C6F060C3250E3AAA56E7 /* [CP] Check Pods Manifest.lock */,
+				491287F12133829700FAB2DA /* Compile Resources - R.swift */,
 				49573DDD213349B4008CB521 /* Sources */,
 				49573DDE213349B4008CB521 /* Frameworks */,
 				49573DDF213349B4008CB521 /* Resources */,
@@ -214,7 +296,6 @@
 			files = (
 				49573DEF213349B6008CB521 /* LaunchScreen.storyboard in Resources */,
 				49573DEC213349B6008CB521 /* Assets.xcassets in Resources */,
-				49573DEA213349B4008CB521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,15 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-redeux-checkManifestLockResult.txt",
 			);
@@ -250,27 +327,49 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		491287F12133829700FAB2DA /* Compile Resources - R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Resources - R.swift";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		A6148C7A51FCA8AD491D6D7A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-redeux/Pods-redeux-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefreshKit/PullToRefreshKit.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReRxSwift/ReRxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwiftRouter/ReSwiftRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ToolbeltUI/ToolbeltUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefreshKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReRxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ToolbeltUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,15 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-redeuxTests-checkManifestLockResult.txt",
 			);
@@ -307,8 +402,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49573DE7213349B4008CB521 /* ViewController.swift in Sources */,
 				49573DE5213349B4008CB521 /* AppDelegate.swift in Sources */,
+				4912880621338AA800FAB2DA /* RootRoutable.swift in Sources */,
+				491287F5213386AD00FAB2DA /* Redux.swift in Sources */,
+				491287FA2133876200FAB2DA /* AppState.swift in Sources */,
+				49128801213388EE00FAB2DA /* Router.swift in Sources */,
+				491287FC213387B100FAB2DA /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,14 +430,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		49573DE8213349B4008CB521 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49573DE9213349B4008CB521 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		49573DED213349B6008CB521 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
