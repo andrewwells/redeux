@@ -9,7 +9,24 @@
 import ReSwift
 import ReSwiftRouter
 
-struct AppState: StateType {
+struct AppState: Encodable, StateType {
+    //let authState: AuthState
+    let signInState: SignInState
     var navigationState: NavigationState
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(signInState, forKey: CodingKeys.signInState)
+        // try container.encode(navigationState, forKey: CodingKeys.navigationState)
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case signInState
+        // case navigationState
+    }
 }
+
+//extension AppState: Encodable {
+//
+//}
 

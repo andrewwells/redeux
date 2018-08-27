@@ -11,6 +11,7 @@ import ReSwiftRouter
 // Simple Routables
 class SplashViewRoutable: Routable {}
 class SignInViewRoutable: Routable {}
+class HomeViewRoutable: Routable {}
 
 class RootRoutable: Routable {
     let window: UIWindow
@@ -20,19 +21,22 @@ class RootRoutable: Routable {
     }
     
     func setToSplashViewController() -> Routable {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .green
-        self.window.rootViewController = vc
-
+        self.window.rootViewController = SplashViewController()
         return SplashViewRoutable()
     }
 
     func setToSignInViewController() -> Routable {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .orange
-        self.window.rootViewController = vc
-
+        let navController = UINavigationController(rootViewController: SignInViewController())
+        self.window.rootViewController = navController
         return SignInViewRoutable()
+    }
+    
+    func setToHomeViewController() -> Routable {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .red
+        let navController = UINavigationController(rootViewController: vc)
+        self.window.rootViewController = navController
+        return HomeViewRoutable()
     }
     
     func changeRouteSegment(

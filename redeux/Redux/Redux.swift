@@ -8,4 +8,4 @@
 
 import ReSwift
 
-var store: Store<AppState> = Store<AppState>(reducer: appReducer, state: nil)
+var store: Store<AppState> = Store<AppState>(reducer: appReducer, state: nil, middleware: [ActionLogger()])

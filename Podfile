@@ -7,9 +7,10 @@ target 'redeux' do
   
   # Utility
   pod 'R.swift'
-  pod 'Toolbelt', :git => 'https://github.com/andrewwells/toolbelt.git'
-  pod 'ToolbeltUI', :git => 'https://github.com/andrewwells/toolbelt.git'
-  
+  # pod 'Toolbelt', :git => 'https://github.com/andrewwells/toolbelt.git'
+  pod 'Toolbelt', :path => '~/development/toolbelt'
+  # pod 'ToolbeltUI', :git => 'https://github.com/andrewwells/toolbelt.git'
+  pod 'ToolbeltUI', :path => '~/development/toolbelt'
 
   # UI Helper
   pod 'SnapKit'
@@ -19,7 +20,7 @@ target 'redeux' do
   # Redux
   pod 'ReSwift'
   pod 'ReSwiftRouter'
-  pod 'ReRxSwift', '~> 1.0'
+  pod 'ReRxSwift', '~> 2.0'
 
   # Reactive
   pod 'RxSwift', '~> 4.0'

@@ -15,9 +15,13 @@ import IQKeyboardManagerSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let storeLogger = StoreLogger()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // Enable Logging
+        store.subscribe(storeLogger)
         
         // Setup Keyboard Manager
         IQKeyboardManager.shared.enable = true

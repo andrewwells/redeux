@@ -12,6 +12,7 @@ import ReSwiftRouter
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
         // authState: authReducer(action: action, state: state?.authState),
+        signInState: signInReducer(action: action, state: state?.signInState),
         navigationState: NavigationReducer.handleAction(action, state: state?.navigationState)
     )
 }

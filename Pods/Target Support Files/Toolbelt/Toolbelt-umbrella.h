@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "Toolbelt.h"
 
 FOUNDATION_EXPORT double ToolbeltVersionNumber;
 FOUNDATION_EXPORT const unsigned char ToolbeltVersionString[];

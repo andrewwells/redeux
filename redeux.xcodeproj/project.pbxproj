@@ -13,6 +13,16 @@
 		491287FC213387B100FAB2DA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491287FB213387B100FAB2DA /* AppReducer.swift */; };
 		49128801213388EE00FAB2DA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49128800213388EE00FAB2DA /* Router.swift */; };
 		4912880621338AA800FAB2DA /* RootRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912880521338AA800FAB2DA /* RootRoutable.swift */; };
+		491288092133910500FAB2DA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491288082133910500FAB2DA /* SplashViewController.swift */; };
+		4912880C2133923400FAB2DA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912880B2133923400FAB2DA /* SignInViewController.swift */; };
+		4912880E2133987B00FAB2DA /* SessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912880D2133987B00FAB2DA /* SessionProvider.swift */; };
+		49128811213398A300FAB2DA /* AuthActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49128810213398A300FAB2DA /* AuthActions.swift */; };
+		49128813213398FA00FAB2DA /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49128812213398FA00FAB2DA /* AuthState.swift */; };
+		491288152133991F00FAB2DA /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491288142133991F00FAB2DA /* Session.swift */; };
+		491288172133A7DD00FAB2DA /* SignInState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491288162133A7DD00FAB2DA /* SignInState.swift */; };
+		491288192133AD2F00FAB2DA /* SignInReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491288182133AD2F00FAB2DA /* SignInReducer.swift */; };
+		4912881B2133B2D200FAB2DA /* StoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912881A2133B2D200FAB2DA /* StoreLogger.swift */; };
+		4912881D2133B66800FAB2DA /* ActionLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912881C2133B66800FAB2DA /* ActionLogger.swift */; };
 		49573DE5213349B4008CB521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49573DE4213349B4008CB521 /* AppDelegate.swift */; };
 		49573DEC213349B6008CB521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49573DEB213349B6008CB521 /* Assets.xcassets */; };
 		49573DEF213349B6008CB521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49573DED213349B6008CB521 /* LaunchScreen.storyboard */; };
@@ -39,6 +49,16 @@
 		491287FB213387B100FAB2DA /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		49128800213388EE00FAB2DA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4912880521338AA800FAB2DA /* RootRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRoutable.swift; sourceTree = "<group>"; };
+		491288082133910500FAB2DA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4912880B2133923400FAB2DA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4912880D2133987B00FAB2DA /* SessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProvider.swift; sourceTree = "<group>"; };
+		49128810213398A300FAB2DA /* AuthActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActions.swift; sourceTree = "<group>"; };
+		49128812213398FA00FAB2DA /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		491288142133991F00FAB2DA /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		491288162133A7DD00FAB2DA /* SignInState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInState.swift; sourceTree = "<group>"; };
+		491288182133AD2F00FAB2DA /* SignInReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInReducer.swift; sourceTree = "<group>"; };
+		4912881A2133B2D200FAB2DA /* StoreLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLogger.swift; sourceTree = "<group>"; };
+		4912881C2133B66800FAB2DA /* ActionLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLogger.swift; sourceTree = "<group>"; };
 		49573DE1213349B4008CB521 /* redeux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redeux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49573DE4213349B4008CB521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49573DEB213349B6008CB521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				491287F92133876200FAB2DA /* AppState.swift */,
+				49128812213398FA00FAB2DA /* AuthState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -122,6 +143,7 @@
 		491287F8213386CB00FAB2DA /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				49128810213398A300FAB2DA /* AuthActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -129,6 +151,8 @@
 		491287FD213387FE00FAB2DA /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				4912880A2133921F00FAB2DA /* SignIn */,
+				49128807213390EF00FAB2DA /* Splash */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -136,6 +160,7 @@
 		491287FE2133881E00FAB2DA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4912880D2133987B00FAB2DA /* SessionProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -152,6 +177,7 @@
 		491288022133899A00FAB2DA /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				491288142133991F00FAB2DA /* Session.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -159,8 +185,28 @@
 		49128803213389B700FAB2DA /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				4912881A2133B2D200FAB2DA /* StoreLogger.swift */,
+				4912881C2133B66800FAB2DA /* ActionLogger.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		49128807213390EF00FAB2DA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				491288082133910500FAB2DA /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		4912880A2133921F00FAB2DA /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4912880B2133923400FAB2DA /* SignInViewController.swift */,
+				491288162133A7DD00FAB2DA /* SignInState.swift */,
+				491288182133AD2F00FAB2DA /* SignInReducer.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		49573DD8213349B4008CB521 = {
@@ -357,6 +403,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toolbelt/Toolbelt.framework",
 				"${BUILT_PRODUCTS_DIR}/ToolbeltUI/ToolbeltUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -370,6 +417,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toolbelt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ToolbeltUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,8 +453,18 @@
 				49573DE5213349B4008CB521 /* AppDelegate.swift in Sources */,
 				4912880621338AA800FAB2DA /* RootRoutable.swift in Sources */,
 				491287F5213386AD00FAB2DA /* Redux.swift in Sources */,
+				49128811213398A300FAB2DA /* AuthActions.swift in Sources */,
+				49128813213398FA00FAB2DA /* AuthState.swift in Sources */,
 				491287FA2133876200FAB2DA /* AppState.swift in Sources */,
+				491288192133AD2F00FAB2DA /* SignInReducer.swift in Sources */,
+				4912880E2133987B00FAB2DA /* SessionProvider.swift in Sources */,
+				4912880C2133923400FAB2DA /* SignInViewController.swift in Sources */,
+				491288152133991F00FAB2DA /* Session.swift in Sources */,
+				4912881B2133B2D200FAB2DA /* StoreLogger.swift in Sources */,
+				4912881D2133B66800FAB2DA /* ActionLogger.swift in Sources */,
+				491288172133A7DD00FAB2DA /* SignInState.swift in Sources */,
 				49128801213388EE00FAB2DA /* Router.swift in Sources */,
+				491288092133910500FAB2DA /* SplashViewController.swift in Sources */,
 				491287FC213387B100FAB2DA /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
